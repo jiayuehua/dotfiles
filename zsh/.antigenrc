@@ -1,0 +1,31 @@
+# 加载oh-my-zsh库
+ antigen use oh-my-zsh
+#
+# # 加载原版oh-my-zsh中的功能(robbyrussell's oh-my-zsh).
+ antigen bundle git
+# antigen bundle heroku
+# antigen bundle pip
+# antigen bundle lein
+ #antigen bundle command-not-found
+#
+ antigen bundle rupa/z z.sh
+ antigen bundle autojump
+ antigen bundle wd
+ antigen bundle sudo
+ antigen bundle command-not-found
+ antigen bundle colored-man-pages
+ antigen bundle zsh_reload
+ antigen bundle dirhistory
+ #antigen bundle history-substring-search
+ antigen bundle extract 
+# antigen bundle last-working-dir 
+# # 语法高亮功能
+# antigen bundle zsh-users/zsh-syntax-highlighting
+#
+#
+# # 自动补全功能
+ antigen bundle zsh-users/zsh-completions
+#
+# # 加载主题
+# antigen theme robbyrussell
+#
