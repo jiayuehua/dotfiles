@@ -48,5 +48,17 @@ unset config_files
 #bindkey "^[[A" up-line-or-beginning-search # Up
 #bindkey "^[[B" down-line-or-beginning-search # Down
 
+fancy-ctrl-z () {
+  if [[ $#BUFFER -eq 0 ]]; then
+    BUFFER="fg"
+    zle accept-line
+  else
+    zle push-input
+    zle clear-screen
+  fi
+}
+zle -N fancy-ctrl-z
+bindkey '^Z' fancy-ctrl-z
+
 fpath=(~/.zsh $fpath)
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

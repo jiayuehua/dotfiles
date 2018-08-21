@@ -122,8 +122,8 @@ function __setup_aliases
 
   alias g++='g++ --std=c++1z'
   alias clang++='clang++ --std=c++1z'
-  alias rcp='rsync -avzP'
-  alias rsync='rsync -avzP'
+  #alias rcp='rsync -avzP'
+  #alias rsync='rsync -avzP'
 
 }
 
