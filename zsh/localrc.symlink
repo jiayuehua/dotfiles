@@ -120,11 +120,8 @@ function __setup_aliases
   ! type vim >& /dev/null || alias vi='vim -Xn -u ~/.vimrc'
   ! type ag >& /dev/null || alias ag='command ag --nogroup'
 
-  alias g++='g++ --std=c++1z'
-  alias clang++='clang++ --std=c++1z'
-  #alias rcp='rsync -avzP'
-  #alias rsync='rsync -avzP'
-
+  #alias g++='g++ --std=c++1z'
+  #alias clang++='clang++ --std=c++1z'
 }
 
 function __setup_dir_colors
@@ -236,7 +233,7 @@ source /usr/share/zsh-antigen/antigen.zsh
 antigen init /home/rob/.antigenrc
 #
 # # 保存更改
- antigen apply
+antigen apply
 #############################
 #############################
 
