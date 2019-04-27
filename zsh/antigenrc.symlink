@@ -12,7 +12,7 @@
 # antigen bundle autojump
  antigen bundle wd
 # antigen bundle sudo
- antigen bundle command-not-found
+ #antigen bundle command-not-found
  antigen bundle colored-man-pages
  antigen bundle zsh_reload
  #antigen bundle dirhistory

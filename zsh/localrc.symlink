@@ -31,7 +31,6 @@ function __main
     __setup_dir_colors \
     __setup_ssh_agent \
     __setup_prompt \
-    __setup_custom_profiles \
     ; do
   $fn; unset -f $fn
 done
@@ -116,6 +115,7 @@ function __setup_aliases
 {
 
   alias cd..='cd ..'
+  alias ls='ls --color=auto'
   # Skip system wide vimrc to reduce startup time
   ! type vim >& /dev/null || alias vi='vim -Xn -u ~/.vimrc'
   ! type ag >& /dev/null || alias ag='command ag --nogroup'
@@ -229,8 +229,8 @@ function __setup_custom_profiles
 ##########################################################
 ##########################################################
 #
-source /usr/share/zsh-antigen/antigen.zsh
-antigen init /home/rob/.antigenrc
+source /usr/local/share/antigen.zsh
+antigen init ~/.antigenrc
 #
 # # 保存更改
 antigen apply
